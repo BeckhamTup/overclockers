@@ -82,12 +82,14 @@ header {
 /*sizes image inside of deal div*/
 #deal img {
     width: 100%;
+    margin:auto;
 }
 
 /*styling of slides*/
 .offerSlides {
     display: none;
-    width:100%
+    width:100%;
+    margin:auto;
 }
 
 /*container of slides indicated to float to the right side*/
