@@ -1,205 +1,219 @@
 <!DOCTYPE html>
+<!-- lang sets language -->
 <html lang="en">
 
-    <head>
-        <title>Overclockers</title>
-        <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
-        <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
-        <script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
-        <script src="js/JavaScript.js"></script>
-        <link rel="shortcut icon" type="image/png" href="assets/favicon.ico" />
-    </head>
+<head>
+    <!-- sets title -->
+    <title>Overclockers - PCs</title>
+    <!-- links stylesheets -->
+    <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!-- links javascript  -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+    <script src="js/JavaScript.js"></script>
+    <!-- Adds favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.ico" />
+</head>
 
-    <body>
-        <div id=wrapper>
-            <header>
-                <img id="banner" src="assets/banner.jpg" alt="banner">
-                <a id="login" href="Login.html"><img src="assets/Login.png"></a>
-                <nav id="topnav">
-                    <ul>
-                        <li>
-                            <a href="Index.html"><img src="assets/Home.png"></a>
-                            <a class="active" href="PCs.html"><img src="assets/PCs.png"></a>
-                            <a href="Laptops"><img src="assets/Laptops.png"></a>
-                            <a href="Gaming"><img src="assets/Gaming.png"></a>
-                            <a href="Cooling"><img src="assets/Cooling.png"></a>
-                            <a href="Components"><img src="assets/Components.png"></a>
-                            <a href="Acessorise"><img src="assets/Acessorise.png"></a>
-                            <a href="Demo.html"><img src="assets/Video.png"></a>
+<body>
+    <!-- wrapper for the purpose of keeping elements within the bounds of the site -->
+    <div id=wrapper>
+        <!-- header of the site for top elements -->
+        <header>
+            <!-- Site logo linked as a banner -->
+            <img id="banner" src="assets/banner.jpg" alt="banner">
 
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+            <!-- nav tag holds navigation for the site -->
+            <nav id="topnav">
+                <ul>
+                    <li>
+                        <a href="Index.html"><img src="assets/Home.png"></a>
+                        <a class="active" href="PCs.html"><img src="assets/PCs.png"></a>
+                        <a href="Laptops"><img src="assets/Laptops.png"></a>
+                        <a href="Gaming"><img src="assets/Gaming.png"></a>
+                        <a href="Cooling"><img src="assets/Cooling.png"></a>
+                        <a href="Components"><img src="assets/Components.png"></a>
+                        <a href="Acessorise"><img src="assets/Acessorise.png"></a>
+                        <a href="Demo.html"><img src="assets/Video.png"></a>
 
-            <div id="productscontainer">
-                <ul class="products">
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC1.jpg" />
-                            <div>
-                                <p>VISION VR GAMING PC - INTEL 8TH GENERATION 3.6GHZ QUAD CORE</p>
-                                <p>Price:£689</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC2.jpg" />
-                            <div>
-                                <p>SPECTRA GAMING PC - INTEL CORE I5 8400 </p>
-                                <p>Price:£779</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC3.png" />
-                            <div>
-                                <p>KABYLAKE MIDI TOWER GAMING PC CONFIGURATOR</p>
-                                <p>Price:£1267</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC4.png" />
-                            <div>
-                                <p>SKYLAKE-X/KABYLAKE-X (X299) PRO GAMING PC CONFIGURATOR</p>
-                                <p>Price:£1481</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC5.png" />
-                            <div>
-                                <p>KABYLAKE PRO GAMING PC CONFIGURATOR</p>
-                                <p>Price:£1511</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC6.png" />
-                            <div>
-                                <p>KABYLAKE MICRO ATX GAMING PC CONFIGURATOR</p>
-                                <p>Price:£1243</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC7.jpg" />
-                            <div>
-                                <p>ZENITH GAMING PC - AMD RYZEN 7 2700X @ 4.3GHZ BOOST, VEGA 56 ***THREE FREE GAMES***</p>
-                                <p>Price:£1399</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC8.jpg" />
-                            <div>
-                                <p>SUPERNOVA - INTEL CORE I9 7980XE @ 4.6GHZ DDR4 EXTREME OVERCLOCKED PC</p>
-                                <p>Price:£13999</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC9.jpg" />
-                            <div>
-                                <p>GERMANIUM X OVERCLOCKED GAMING PC - INTEL CORE I9 9900K @ 4.8GHZ</p>
-                                <p>Price:£2299</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC10.jpg" />
-                            <div>
-                                <p>GERMANIUM 86 SPECIAL EDITION OVERCLOCKED GAMING PC - INTEL CORE I7 8086K @ 5.0GHZ</p>
-                                <p>Price:£2086</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC11.jpg" />
-                            <div>
-                                <p>SWARM - INTEL CORE I9 9900K @ 4.9GHZ OVERCLOCKED WATERCOOLED EXTREME GAMING PC</p>
-                                <p>Price:£3999</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC12.jpg" />
-                            <div>
-                                <p>ALTAR - INTEL CORE I9 7900X @ 4.6GHZ OVERCLOCKED WATERCOOLED GAMING DESK</p>
-                                <p>Price:£11299</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC13.jpg" />
-                            <div>
-                                <p>RADIANCE G1 - INTEL I5 8400 POWERED BY ASUS GAMING PC</p>
-                                <p>Price:£779</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC14.jpg" />
-                            <div>
-                                <p>OCUK KINETIC R1 GAMING PC - AMD RYZEN "RAVEN RIDGE" RYZEN 3 2200G</p>
-                                <p>Price:£439</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/PC15.jpg" />
-                            <div>
-                                <p>XERO OVERCLOCKED GAMING PC- INTEL CORE I7 7800X @ 4.5GHZ</p>
-                                <p>Price:£1999</p>
-                            </div>
-                        </a>
                     </li>
                 </ul>
-            </div>
-        </div>
+            </nav>
+        </header>
 
-        <script>Basket()</script>
-        <div class="sticky">
-            <a class="myBtn"><img src="assets/Cart.png"></a>
-            <h2>Click cart and drag and drop to shop!</h2>
-            <div class="overlay">
-                <div class="cart">
-                    <h1>Shopping Cart</h1>
-                    <div id="table">
-                        <table id="cartcontent" fitColumns="true" style="width:700px;height:auto;">
-                            <thead>
-                                <tr>
-                                    <th field="name" width=500>Name</th>
-                                    <th field="quantity" width=60 align="right">Quantity</th>
-                                    <th field="price" width=60 align="right">Price</th>
-                                </tr>
-                            </thead>
-                        
-                        </table>
-                    
-                    </div>
-                    <p class="total">Total: £0</p>
+        <!-- div to hold products -->
+        <div id="productscontainer">
+            <ul class="products">
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC1.jpg" />
+                        <div>
+                            <p>VISION VR GAMING PC - INTEL 8TH GENERATION 3.6GHZ QUAD CORE</p>
+                            <p>Price:£689</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC2.jpg" />
+                        <div>
+                            <p>SPECTRA GAMING PC - INTEL CORE I5 8400 </p>
+                            <p>Price:£779</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC3.png" />
+                        <div>
+                            <p>KABYLAKE MIDI TOWER GAMING PC CONFIGURATOR</p>
+                            <p>Price:£1267</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC4.png" />
+                        <div>
+                            <p>SKYLAKE-X/KABYLAKE-X (X299) PRO GAMING PC CONFIGURATOR</p>
+                            <p>Price:£1481</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC5.png" />
+                        <div>
+                            <p>KABYLAKE PRO GAMING PC CONFIGURATOR</p>
+                            <p>Price:£1511</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC6.png" />
+                        <div>
+                            <p>KABYLAKE MICRO ATX GAMING PC CONFIGURATOR</p>
+                            <p>Price:£1243</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC7.jpg" />
+                        <div>
+                            <p>ZENITH GAMING PC - AMD RYZEN 7 2700X @ 4.3GHZ BOOST, VEGA 56 ***THREE FREE GAMES***</p>
+                            <p>Price:£1399</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC8.jpg" />
+                        <div>
+                            <p>SUPERNOVA - INTEL CORE I9 7980XE @ 4.6GHZ DDR4 EXTREME OVERCLOCKED PC</p>
+                            <p>Price:£13999</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC9.jpg" />
+                        <div>
+                            <p>GERMANIUM X OVERCLOCKED GAMING PC - INTEL CORE I9 9900K @ 4.8GHZ</p>
+                            <p>Price:£2299</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC10.jpg" />
+                        <div>
+                            <p>GERMANIUM 86 SPECIAL EDITION OVERCLOCKED GAMING PC - INTEL CORE I7 8086K @ 5.0GHZ</p>
+                            <p>Price:£2086</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC11.jpg" />
+                        <div>
+                            <p>SWARM - INTEL CORE I9 9900K @ 4.9GHZ OVERCLOCKED WATERCOOLED EXTREME GAMING PC</p>
+                            <p>Price:£3999</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC12.jpg" />
+                        <div>
+                            <p>ALTAR - INTEL CORE I9 7900X @ 4.6GHZ OVERCLOCKED WATERCOOLED GAMING DESK</p>
+                            <p>Price:£11299</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC13.jpg" />
+                        <div>
+                            <p>RADIANCE G1 - INTEL I5 8400 POWERED BY ASUS GAMING PC</p>
+                            <p>Price:£779</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC14.jpg" />
+                        <div>
+                            <p>OCUK KINETIC R1 GAMING PC - AMD RYZEN "RAVEN RIDGE" RYZEN 3 2200G</p>
+                            <p>Price:£439</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item">
+                        <img src="assets/PC15.jpg" />
+                        <div>
+                            <p>XERO OVERCLOCKED GAMING PC- INTEL CORE I7 7800X @ 4.5GHZ</p>
+                            <p>Price:£1999</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- div to hold basket styled to stick to the bottom of the screen -->
+    <div class="sticky">
+        <!-- button to hide and reveal cart -->
+        <a class="myBtn"><img src="assets/Cart.png"></a>
+        <h2>Click cart and drag and drop to shop!</h2>
+        <!-- overlay class is used in js to toggle it being displayed -->
+        <div class="overlay">
+            <div class="cart">
+                <h1>Shopping Cart</h1>
+                <!-- table to hold shopping information -->
+                <div id="table">
+                    <table id="cartcontent" fitColumns="true" style="width:700px;height:auto;">
+                        <thead>
+                            <tr>
+                                <th field="name" width=500>Name</th>
+                                <th field="quantity" width=60 align="right">Quantity</th>
+                                <th field="price" width=60 align="right">Price</th>
+                            </tr>
+                        </thead>
+
+                    </table>
+
                 </div>
+                <!-- class total used to update total cost of basket -->
+                <p class="total">Total: £0</p>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 
 </html>

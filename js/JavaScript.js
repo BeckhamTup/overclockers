@@ -1,6 +1,6 @@
 ﻿var ImageCount = 0;
 var slideIndex = 1;
-
+//runs scripts inside on site load
 window.onload = function ()
 {
     //runs auto slider on load
@@ -8,27 +8,31 @@ window.onload = function ()
 
     //runs manual slider on load
     showDivs(slideIndex);
-
-
-    
 }
-
+//function used to get user name/display it
 function GetName()
 {
+    //if statement detects if browser supports localStorage
     if (typeof (Storage) !== "undefined") {
+        //if statement detects if browser has name information already
         if (localStorage.getItem("name")===null)
         {
+            //prompts user for name and sets it as a localStorage variable
             var setname = prompt("Enter your name");
             localStorage.setItem("name", setname);
+            //gets name localStorage and displays it in username HTML tag
+            document.getElementById("username").innerHTML = localStorage.getItem("name");
         }
         else
         {
+            //gets name localStorage and displays it in username HTML tag
             document.getElementById("username").innerHTML = localStorage.getItem("name")
         }
-        document.getElementById("username").innerHTML = localStorage.getItem("name");
+        
     }
     else
     {
+        //displays message in username tag
         document.getElementById("username").innerHTML = "Browser does not support web storage";
     }
 }
@@ -59,29 +63,47 @@ function ImageSlider() {
     setTimeout(ImageSlider, 5000);
 }
 
+//function called when arrow buttons on slider are pressed
 function DivChange(plusOrminus) {
+    //depending on which arrow pressed plus or minuses from variable and result sent to next function
     showDivs(slideIndex += plusOrminus);
 }
 
+//function used to determine which slide is displayed based on the total
 function showDivs(slideNum) {
+    //variable used as a counter
     var i;
+    //uses class name to collect all images in slider and puts them into a variable
     var pictures = document.getElementsByClassName("offerSlides");
-    if (slideNum > pictures.length) { slideNum = 1 }
-    if (slideNum < 1) { slideNum = pictures.length }
+    //sets slide number so that it cannot go outside of the bounds of how many images in the slider
+    //if number goes too high it is reset
+    if (slideNum > pictures.length)
+    {
+        slideIndex = 1
+    }
+    //if number is too low it is set back to highest value to give a loop effect
+    if (slideNum < 1)
+    {
+        slideIndex = pictures.length
+    }
+    //sets pictures to not display
     for (i = 0; i < pictures.length; i++) {
         pictures[i].style.display = "none";
     }
+    //displays image based on slideIndex variable
     pictures[slideIndex - 1].style.display = "block";
 }
 
 
 
-
+//function used to open new window with mailing list
 function myFunction() {
     window.open("../Mailing.html", "myWindow", "width=800,height=200"); 
 }
 
+//jquery functions
 $(document).ready(function () {
+    //displays when jquery is loaded
     console.log("ready!");
 
     //when button element is clicked this function is activated
@@ -92,6 +114,7 @@ $(document).ready(function () {
 
 });
 
+//variables with cart info
 var data = { "total": 0, "rows": [] };
 var totalCost = 0;
 

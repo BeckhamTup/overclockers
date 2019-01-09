@@ -1,47 +1,54 @@
 <!DOCTYPE html>
+<!-- lang sets language -->
 <html lang="en">
 
 <head>
-    <title>Overclockers</title>
+    <!-- sets title -->
+    <title>Overclockers - Demo</title>
+    <!-- links stylesheets -->
+    <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!-- links javascript  -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
     <script src="js/JavaScript.js"></script>
+    <!-- Adds favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/favicon.ico" />
 </head>
 
-    <body>
+<body>
+    <!-- wrapper for the purpose of keeping elements within the bounds of the site -->
+    <div id=wrapper>
+        <!-- header of the site for top elements -->
+        <header>
+            <!-- Site logo linked as a banner -->
+            <img id="banner" src="assets/banner.jpg" alt="banner">
 
-        <div id=wrapper>
+            <!-- nav tag holds navigation for the site -->
+            <nav id="topnav">
+                <ul>
+                    <li>
+                        <a href="Index.html"><img src="assets/Home.png"></a>
+                        <a href="PCs.html"><img src="assets/PCs.png"></a>
+                        <a href="Laptops"><img src="assets/Laptops.png"></a>
+                        <a href="Gaming"><img src="assets/Gaming.png"></a>
+                        <a href="Cooling"><img src="assets/Cooling.png"></a>
+                        <a href="Components"><img src="assets/Components.png"></a>
+                        <a href="Acessorise"><img src="assets/Acessorise.png"></a>
+                        <a class="active" href="Demo.html"><img src="assets/Video.png"></a>
 
-            <header>
-
-                <img id="banner" src="assets/banner.jpg" alt="banner">
-
-                <a id="login" href="Login.html"><img src="assets/Login.png"></a>
-
-                <nav id="topnav">
-                    <ul>
-                        <li>
-                            <a href="Index.html"><img src="assets/Home.png"></a>
-                            <a href="PCs.html"><img src="assets/PCs.png"></a>
-                            <a href="Laptops"><img src="assets/Laptops.png"></a>
-                            <a href="Gaming"><img src="assets/Gaming.png"></a>
-                            <a href="Cooling"><img src="assets/Cooling.png"></a>
-                            <a href="Components"><img src="assets/Components.png"></a>
-                            <a href="Acessorise"><img src="assets/Acessorise.png"></a>
-                            <a class="active" href="Demo.html"><img src="assets/Video.png"></a>
-
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <div id="demoholder">
-                <iframe width="853" height="505" src="https://www.youtube.com/embed/AdWHxtRpjFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <footer></footer>
-
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- div holding youtube video with functionality of the site -->
+        <div id="demoholder">
+            <iframe width="853" height="505" src="https://www.youtube.com/embed/AdWHxtRpjFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-    </body>
+    </div>
+
+</body>
 
 </html>

@@ -1,28 +1,31 @@
+/*removes default margin and padding and defaults border-box*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
- body 
-{
+/* body tag with a background image set*/
+body {
     background-image: url("../assets/background.png");
-
+    background-color: rgba(38, 38, 38, .95);
+    display: flex;
+    flex-direction: column;
 }
 
+/*wapper to keep elements within its bounds*/
 #wrapper {
     margin: 0 auto;
     width: 80%;
     background-color: black;
 }
 
-
+/*used in head of document black styling as a fail safe incase of gaps between elements*/
 header {
     background-color: black;
-    
 }
 
-
+/*resizing of banner logo at the top of pages with margin, floated left to keep on one side of the screen*/
 #banner {
     height: 65px;
     margin-top: 30px;
@@ -30,22 +33,7 @@ header {
     float: left;
 }
 
-#login {
-    filter: invert(100%);
-    background-color: yellow;
-    float: right;
-    margin-top: 25px;
-    margin-right: 10px;
-    height: 50px;
-}
-
-
-#login:hover 
-
-{
-    background-color: orangered;
-}
-
+/*top navigation styling, inline used to keep elements on one line*/
 #topnav {
     border: 2px solid black;
     width: 100%;
@@ -53,6 +41,7 @@ header {
     display: inline-flex;
 }
 
+/*styles images navigation within topnav*/
 #topnav a 
 {
     border: 2px solid black;
@@ -65,11 +54,13 @@ header {
 
 }
 
+/*on hover used to display a different colour on mouse over*/
 #topnav a:hover 
 {
     background-color: gray;
 }
 
+/*styling of divs containing slides*/
 #slider {
     border: 2px solid black;
     width: 100%;
@@ -77,37 +68,44 @@ header {
     background-color: #2A2A2A;
 }
 
+/*styling of slides*/
 .Slides {
     margin: 0 auto;
     width: 100%;
 }
 
+/*styling of deal image, indicated to be on the left side*/
 #deal {
     float:left
 }
 
+/*sizes image inside of deal div*/
 #deal img {
     width: 100%;
 }
 
+/*styling of slides*/
 .offerSlides {
     display: none;
     width:100%
-   
 }
 
+/*container of slides indicated to float to the right side*/
 #offerslider {
 float:right;
 }
 
+/*styling of left button to move to its position on the slides*/
 .left {
     transform: translate(0%,-800%);
 }
 
+/*styling of right button to move to its position on the slides*/
 .right {
     transform: translate(3920%,-800%)
 }
 
+/*styling of bottom navigation*/
 #bottomnav {
     border: 2px solid black;
     width: 100%;
@@ -115,6 +113,7 @@ float:right;
     display: inline-flex;
 }
 
+/*styling of navigation in bottomnav*/
 #bottomnav a {
     border: 2px solid black;
     border-radius: 50%;
@@ -126,36 +125,43 @@ float:right;
     background-color: white;
 }
 
+/*onhover styling of bottomnav links*/
 #bottomnav a:hover {
     background-color: gray;
 }
 
+/*styling of images in bottomnav*/
 #bottomnav img {
     display:block
 }
 
+/*styling of div containing mailing list info, margin auto to center*/
 #mailinglist {
     background-color:white;
     text-align:center;
     padding: 10px;
     margin:auto;
 }
+
+/*styling mailing list submission button, margin auto to center*/
 #mailingbutton {
     display: block;
     margin: auto;
     width:30%
 }
 
+/*styling mailing list submission button image, margin auto to center*/
 #mailingbutton img {
     display: block;
     margin: auto;
 }
 
+/*on hover of mailing button, changes colour when the user mouses over*/
 #mailingbutton:hover {
     background-color: gray;
 }
 
-
+/*styling of socialmedia div*/
 #social {
     border: 2px solid black;
     width: 100%;
@@ -163,6 +169,7 @@ float:right;
     display: inline-flex;
 }
 
+/*styling of links within soicalmedia div, inline to keep them on the same line, radius to round them*/
 #social a {
     border: 2px solid black;
     border-radius: 50%;
@@ -173,43 +180,43 @@ float:right;
     background-color: white;
 }
 
+/*change of colour when user hovers over social links*/
 #social a:hover {
     background-color: gray;
 }
 
-body {
-    background-color:rgba(38, 38, 38, .95);
-    display: flex;
-    flex-direction: column;
-}
-
+/*h1 tag with font styling to match look of site*/
 h1 {
     color: navy;
-    margin-left: 20px;
+    font-size: 240%;
     font-family: "Lato",Tahoma,sans-serif;
     margin: 3px;
 }
+
+/*h2 tag with font styling to match look of site*/
 h2 {
     font-family: "Lato",Tahoma,sans-serif;
-    font-size: 16px;
+    font-size: 240%;
     left: 10px;
     bottom: 20px;
     color: white;
     text-align: center;
     display: inline;
-    
 }
+/*p tag styled inline so multiple can be used and still be displayed on the same line*/
 p {
     color: white;
     display: inline;
+    font-size:120%;
 }
 
-
+/*styling of welcome text, text align to center and margin*/
 #welcome {
     text-align: center;
     margin:auto
 }   
 
+/*centers ul tags*/
 ul {
     list-style: none;
     margin: 0 auto;
@@ -217,30 +224,37 @@ ul {
     text-align: center;
 }
 
+/*centers mailing list div*/
 #email {
     text-align:center;
     margin:5%
 }
 
+/*pads mailing list form*/
 #email form {
     padding:10px;
 }
+
+/*styles products, sets style of the list of product to none*/
 .products {
     list-style: none;
     padding: 0px;
 }
 
+/*inline-flex used to make products display in a line*/
 .products li {
     display: inline-flex;
     margin: 5px;
 }
 
+/*class containing shopping cart displayed as none so that it is hidden until the user toggles it otherwise*/
 .overlay {
     
     display: none;
     pointer-events: none;
 }
 
+/*class used to style cart button*/
 .myBtn {
     border: 2px solid black;
     border-radius: 50%;
@@ -250,12 +264,13 @@ ul {
     margin: 10px;
     background-color: white;
 }
-
+/*class used to style cart button on hover*/
 .myBtn:hover {
 
     background-color: gray;
 }
 
+/*contains products within border*/
 #productscontainer {
     border: 2px solid black;
     width: 100%;
@@ -263,21 +278,26 @@ ul {
     display: inline-flex;
 }
 
+/*styles product images*/
 #productscontainer img {
     height: 200px;
     width: 200px;
     background:white;
 }
+
+/*styles items*/
 .item {
     display: block;
     text-decoration: none;
     width: 250px;
 }
 
+/*styles item images*/
 .item img {
     border: 1px solid #333;
 }
 
+/*styles item text*/
 .item p {
     margin: 0;
     font-weight: bold;
@@ -285,6 +305,7 @@ ul {
     color: #c3c3c3;
 }
 
+/*styles cart*/
 .cart {
     width: 100%;
     background: white;
@@ -294,14 +315,16 @@ ul {
     margin-right: 10%;
 }
 
+/*styles cart total*/
 .total {
     margin: 0;
     text-align: left;
     padding-right: 20px;
-    background-color:lightgray;
-    width:700px
+    background-color: rgba(38, 38, 38, 1);
+    width: 700px
 }
 
+/*styles sticky cart on page, rgba colouring to add transparency as not to cover products*/
 .sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -312,10 +335,9 @@ ul {
     margin: auto;
 }
 
+/*div that holds demo video*/
 #demoholder {
     border: 2px solid black;
     background: rgba(38, 38, 38, .95);
     text-align:center;
 }
-
-/*background-color: rgba(255, 0, 0, 0.2);*/

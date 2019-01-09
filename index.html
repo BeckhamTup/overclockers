@@ -1,93 +1,114 @@
 <!DOCTYPE html>
+<!-- lang sets language -->
 <html lang="en">
 
-    <head>
-        <title>Overclockers</title>
-        <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
-        <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
-        <script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
-        <script src="js/JavaScript.js"></script>
-        <link rel="shortcut icon" type="image/png" href="assets/favicon.ico" />
-    </head>
+<head>
+    <!-- sets title -->
+    <title>Overclockers - Home</title>
+    <!-- links stylesheets -->
+    <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!-- links javascript  -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+    <script src="js/JavaScript.js"></script>
+    <!-- Adds favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.ico" />
+</head>
 
-    <body>
+<body>
+    <!-- wrapper for the purpose of keeping elements within the bounds of the site -->
+    <div id=wrapper>
 
-        <div id=wrapper>
-            <header>
+        <!-- header of the site for top elements -->
+        <header>
 
-                <img id="banner" src="assets/banner.jpg" alt="banner">
+            <!-- Site logo linked as a banner -->
+            <img id="banner" src="assets/banner.jpg" alt="banner">
 
-                <a id="login" href="Login.html"><img src="assets/Login.png" alt="Login"></a>
-
-                <nav id="topnav">
-                    <ul>
-                        <li>
-                            <a class="active" href="Index.html"><img src="assets/Home.png" alt="Home"></a>
-                            <a href="PCs.html"><img src="assets/PCs.png" alt="PCs"></a>
-                            <a href="Laptops"><img src="assets/Laptops.png" alt="Laptops"></a>
-                            <a href="Gaming"><img src="assets/Gaming.png" alt="Gaming"></a>
-                            <a href="Cooling"><img src="assets/Cooling.png" alt="Cooling"></a>
-                            <a href="Components"><img src="assets/Components.png" alt="Components"></a>
-                            <a href="Acessorise"><img src="assets/Acessorise.png" alt="Acessorise"></a>
-                            <a href="Demo.html"><img src="assets/Video.png" alt="Video"></a>
-
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <div id="welcome">
-                <p>Welcome to the site, </p><p id="username"></p><p>!</p><script>GetName()</script>
-            </div>
-            <div id="slider">
-                <img class="Slides" src="assets/FortniteSlide.jpg" alt="FortnightSlide">
-                <img class="Slides" src="assets/NextDaySlide.jpg" alt="NextDaySlide">
-                <img class="Slides" src="assets/BlackFridaySlide.jpg" alt="BlackFridaySlide">
-                <img class="Slides" src="assets/JanuarySaleSlide.jpg" alt="JanuarySaleSlide">
-            </div>
-            <div id="deal">
-                <img src="assets/Deal.png" alt="Deal">
-            </div>
-            <div id="offerslider">
-                <img class="offerSlides" src="assets/GalliumCase.jpg" alt="GalliumCase">
-                <img class="offerSlides" src="assets/GermaniumCase.jpg" alt="GermaniumCase">
-                <img class="offerSlides" src="assets/KatanaCase.jpg" alt="KatanaCase">
-                <img class="offerSlides" src="assets/OxygenCase.jpg" alt="OxygenCase">
-                <button class="left" onclick="DivChange(-1)">&#10094;</button>
-                <button class="right" onclick="DivChange(1)">&#10095;</button>
-            </div>
-
-            <nav id="bottomnav">
+            <!-- nav tag holds navigation for the site -->
+            <nav id="topnav">
                 <ul>
                     <li>
-                        <a href="https://www.overclockers.co.uk/gallery?title=Gallery"><img src="assets/Events.png" alt="Events">Events</a>
-                        <a href="https://www.overclockers.co.uk/news"><img src="assets/Blog.png" alt="Blog">Blog</a>
-                        <a href="https://forums.overclockers.co.uk/"><img src="assets/Forum.png" alt="Forum">Forum</a>
+                        <a class="active" href="Index.html"><img src="assets/Home.png" alt="Home"></a>
+                        <a href="PCs.html"><img src="assets/PCs.png" alt="PCs"></a>
+                        <a href="Laptops"><img src="assets/Laptops.png" alt="Laptops"></a>
+                        <a href="Gaming"><img src="assets/Gaming.png" alt="Gaming"></a>
+                        <a href="Cooling"><img src="assets/Cooling.png" alt="Cooling"></a>
+                        <a href="Components"><img src="assets/Components.png" alt="Components"></a>
+                        <a href="Acessorise"><img src="assets/Acessorise.png" alt="Acessorise"></a>
+                        <a href="Demo.html"><img src="assets/Video.png" alt="Video"></a>
                     </li>
                 </ul>
             </nav>
-
-            <div id="mailinglist">
-                <h1>Want to join our mailing list?</h1>
-                <button id="mailingbutton" onclick="myFunction()"><img src="assets/Contact.png" alt="Contact">Click Here!</button>
-            </div>
-
-
-            <footer>
-                <nav id="social">
-                    <ul>
-                        <li>
-                            <a href="https://www.youtube.com/user/OverclockersUK/"><img src="assets/youtube.png" alt="youtube"></a>
-                            <a href="https://twitter.com/OverclockersUK"><img src="assets/twitter.png" alt="twitter"></a>
-                            <a href="https://www.instagram.com/overclockersuk/"><img src="assets/instagram.png" alt="instagram"></a>
-                        </li>
-                    </ul>
-                </nav>
-            </footer>
-
+        </header>
+        <!-- displays message and calls on localStorage using a script, this allows the users name to be set and displayed -->
+        <div id="welcome">
+            <p>Welcome to the site, </p><p id="username"></p><p>!</p>
+            <script>GetName()</script>
         </div>
 
-    </body>
+        <!-- images used in a js slider -->
+        <div id="slider">
+            <img class="Slides" src="assets/FortniteSlide.jpg" alt="FortnightSlide">
+            <img class="Slides" src="assets/NextDaySlide.jpg" alt="NextDaySlide">
+            <img class="Slides" src="assets/BlackFridaySlide.jpg" alt="BlackFridaySlide">
+            <img class="Slides" src="assets/JanuarySaleSlide.jpg" alt="JanuarySaleSlide">
+        </div>
+
+        <!-- image of a deal on the site -->
+        <div id="deal">
+            <img src="assets/Deal.png" alt="Deal">
+        </div>
+
+        <!-- images used in a js slider -->
+        <div id="offerslider">
+            <img class="offerSlides" src="assets/GalliumCase.jpg" alt="GalliumCase">
+            <img class="offerSlides" src="assets/GermaniumCase.jpg" alt="GermaniumCase">
+            <img class="offerSlides" src="assets/KatanaCase.jpg" alt="KatanaCase">
+            <img class="offerSlides" src="assets/OxygenCase.jpg" alt="OxygenCase">
+            <!-- buttons that on click change a value in the js to change the diplayed image -->
+            <button class="left" onclick="DivChange(-1)">&#10094;</button>
+            <button class="right" onclick="DivChange(1)">&#10095;</button>
+        </div>
+
+        <!-- container for bottom navigation -->
+        <nav id="bottomnav">
+            <ul>
+                <li>
+                    <!-- hyperlinks styled as images -->
+                    <a href="https://www.overclockers.co.uk/gallery?title=Gallery"><img src="assets/Events.png" alt="Events">Events</a>
+                    <a href="https://www.overclockers.co.uk/news"><img src="assets/Blog.png" alt="Blog">Blog</a>
+                    <a href="https://forums.overclockers.co.uk/"><img src="assets/Forum.png" alt="Forum">Forum</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- container for mailing list information -->
+        <div id="mailinglist">
+            <h1>Want to join our mailing list?</h1>
+            <!-- button calls js function opening the Mailing.html in a new window -->
+            <button id="mailingbutton" onclick="myFunction()"><img src="assets/Contact.png" alt="Contact">Click Here!</button>
+        </div>
+
+        <!-- footer for the bottom elements -->
+        <footer>
+            <!-- navigation tags for social media -->
+            <nav id="social">
+                <ul>
+                    <li>
+                        <!-- styled hyperlinks to overclockers uk social media -->
+                        <a href="https://www.youtube.com/user/OverclockersUK/"><img src="assets/youtube.png" alt="youtube"></a>
+                        <a href="https://twitter.com/OverclockersUK"><img src="assets/twitter.png" alt="twitter"></a>
+                        <a href="https://www.instagram.com/overclockersuk/"><img src="assets/instagram.png" alt="instagram"></a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+    </div>
+
+</body>
 
 </html>

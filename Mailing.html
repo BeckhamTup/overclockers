@@ -1,29 +1,42 @@
 <!DOCTYPE html>
+<!-- lang sets language -->
 <html lang="en">
 
 <head>
-    <title>Overclockers</title>
+    <!-- sets title -->
+    <title>Overclockers - Mailing</title>
+    <!-- links stylesheets -->
+    <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!-- links javascript  -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
     <script src="js/JavaScript.js"></script>
+    <!-- Adds favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/favicon.ico" />
 </head>
 
-    <body>
+<body>
+    <!-- wrapper for the purpose of keeping elements within the bounds of the site -->
+    <div id=wrapper>
+        <!-- holds information for mailing list -->
+        <div id=email>
+            <h2>Mailing List</h2>
 
-        <div id=wrapper>
-            <div id=email>
-                <h2>Mailing List</h2>
+            <!-- form allowing the user to input their email -->
+            <form>
+                Email:<br>
+                <!-- Allows input of text and has the placeholder email to indicate to the user -->
+                <input type="text" name="email" placeholder="Email...">
+                <br><br>
+                <!-- submission button -->
+                <input type="submit" value="Submit">
+            </form>
 
-                <form>
-                    Email:<br>
-                    <input type="text" name="email" placeholder="Email...">
-                    <br><br>
-                    <input type="submit" value="Submit">
-                </form>
-
-                <p>By Entering you email you are signing up to hear all the news and offers from Overclockers Uk!</p>
-            </div>
+            <p>By Entering you email you are signing up to hear all the news and offers from Overclockers Uk!</p>
         </div>
-    </body>
+    </div>
+</body>
 
 </html>
