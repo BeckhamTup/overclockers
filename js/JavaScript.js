@@ -8,7 +8,29 @@ window.onload = function ()
 
     //runs manual slider on load
     showDivs(slideIndex);
+
+
     
+}
+
+function GetName()
+{
+    if (typeof (Storage) !== "undefined") {
+        if (localStorage.getItem("name")===null)
+        {
+            var setname = prompt("Enter your name");
+            localStorage.setItem("name", setname);
+        }
+        else
+        {
+            document.getElementById("username").innerHTML = localStorage.getItem("name")
+        }
+        document.getElementById("username").innerHTML = localStorage.getItem("name");
+    }
+    else
+    {
+        document.getElementById("username").innerHTML = "Browser does not support web storage";
+    }
 }
 
 function ImageSlider() {
