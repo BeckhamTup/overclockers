@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body 
+{
+    background-image: url("../assets/background.png");
+
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 80%;
+    background-color: black;
+}
+
+
+header {
+    background-color: black;
+    
+}
+
+
+#banner {
+    height: 65px;
+    margin-top: 30px;
+    margin-left: 10px;
+    float: left;
+}
+
+#login {
+    filter: invert(100%);
+    background-color: yellow;
+    float: right;
+    margin-top: 25px;
+    margin-right: 10px;
+    height: 50px;
+}
+
+
+#login:hover 
+
+{
+    background-color: orangered;
+}
+
+#topnav {
+    border: 2px solid black;
+    width: 100%;
+    background: rgba(38, 38, 38, .95);
+    display: inline-flex;
+}
+
+#topnav a 
+{
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: white;
+
+}
+
+#topnav a:hover 
+{
+    background-color: gray;
+}
+
+#slider {
+    border: 2px solid black;
+    width: 100%;
+    display: inline-block;
+    background-color: #2A2A2A;
+}
+
+.Slides {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#deal {
+    float:left
+}
+
+.offerSlides {
+    display: none;
+   
+}
+
+#offerslider {
+float:right;
+}
+
+.left {
+    transform: translate(0%,-800%);
+}
+
+.right {
+    transform: translate(3920%,-800%)
+}
+
+#bottomnav {
+    border: 2px solid black;
+    width: 100%;
+    background: rgba(38, 38, 38, .95);
+    display: inline-flex;
+}
+
+#bottomnav a {
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 30px;
+    background-color: white;
+}
+
+#bottomnav a:hover {
+    background-color: gray;
+}
+
+#bottomnav img {
+    display:block
+}
+
+#mailinglist {
+    background-color:white;
+    text-align:center;
+    padding: 10px;
+    margin:auto;
+}
+#mailingbutton {
+    display: block;
+    margin: auto;
+    width:30%
+}
+
+#mailingbutton img {
+    display: block;
+    margin: auto;
+}
+
+#mailingbutton:hover {
+    background-color: gray;
+}
+
+
+#social {
+    border: 2px solid black;
+    width: 100%;
+    background: rgba(38, 38, 38, .95);
+    display: inline-flex;
+}
+
+#social a {
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: white;
+}
+
+#social a:hover {
+    background-color: gray;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+    font-family: "Lato",Tahoma,sans-serif;
+    margin: 3px;
+}
+h2 {
+    font-family: "Lato",Tahoma,sans-serif;
+    font-size: 16px;
+    left: 10px;
+    bottom: 20px;
+    color: white;
+    text-align: center;
+    display: inline;
+    
+}
+p {
+    color:white;
+}
+
+ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+}
+
+#email {
+    text-align:center;
+    margin:5%
+}
+
+#email form {
+    padding:10px;
+}
+.products {
+    list-style: none;
+    padding: 0px;
+}
+
+.products li {
+    display: inline-flex;
+    margin: 5px;
+}
+
+.overlay {
+    
+    display: none;
+    pointer-events: none;
+}
+
+.myBtn {
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: white;
+}
+
+.myBtn:hover {
+
+    background-color: gray;
+}
+
+#productscontainer {
+    border: 2px solid black;
+    width: 100%;
+    background: black;
+    display: inline-flex;
+}
+
+#productscontainer img {
+    height: 200px;
+    width: 200px;
+    background:white;
+}
+.item {
+    display: block;
+    text-decoration: none;
+    width: 250px;
+}
+
+.item img {
+    border: 1px solid #333;
+}
+
+.item p {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    color: #c3c3c3;
+}
+
+.cart {
+    width: 100%;
+    background: white;
+    padding: 0px 10px;
+    pointer-events: all;
+    margin: auto;
+    margin-right: 10%;
+}
+
+.total {
+    margin: 0;
+    text-align: left;
+    padding-right: 20px;
+    background-color:lightgray;
+    width:700px
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    background-color: rgba(38, 38, 38, .95);
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+#demoholder {
+    border: 2px solid black;
+    background: rgba(38, 38, 38, .95);
+    text-align:center;
+}
+
+/*background-color: rgba(255, 0, 0, 0.2);*/
