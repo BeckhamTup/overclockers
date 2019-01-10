@@ -98,7 +98,7 @@ function showDivs(slideNum) {
 
 //function used to open new window with mailing list
 function myFunction() {
-    window.open("../Mailing.html", "myWindow", "width=800,height=300"); 
+    window.open("Mailing.html", "myWindow", "width=800,height=300"); 
 }
 
 //jquery functions
