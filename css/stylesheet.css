@@ -76,13 +76,13 @@ header {
 
 /*styling of deal image, indicated to be on the left side*/
 #deal {
-    float: left
+    margin:auto;
 }
 
 /*sizes image inside of deal div*/
 #deal img {
-    width: 100%;
-    margin: auto;
+    width: 60.1%;
+    margin-left: 19.5%;
 }
 
 /*styling of slides*/
@@ -93,8 +93,9 @@ header {
 
 /*container of slides indicated to float to the right side*/
 #offerslider {
-    float: right;
-    display:flex;
+    margin: auto;
+    width: 61%;
+    display: flex;
 }
 
 /*styling of left button to move to its position on the slides*/
