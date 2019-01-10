@@ -58,7 +58,7 @@ function ImageSlider() {
         ImageCount = 1
     }
     //displays image corralating to count (minus 1 as arrays start at 0)
-    images[ImageCount - 1].style.display = "block";
+    images[ImageCount - 1].style.display = "inline-block";
     //sets 5 seconds before runs again
     setTimeout(ImageSlider, 5000);
 }
@@ -91,14 +91,14 @@ function showDivs(slideNum) {
         pictures[i].style.display = "none";
     }
     //displays image based on slideIndex variable
-    pictures[slideIndex - 1].style.display = "block";
+    pictures[slideIndex - 1].style.display = "inline-block";
 }
 
 
 
 //function used to open new window with mailing list
 function myFunction() {
-    window.open("../Mailing.html", "myWindow", "width=800,height=200"); 
+    window.open("../Mailing.html", "myWindow", "width=800,height=300"); 
 }
 
 //jquery functions

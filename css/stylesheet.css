@@ -76,36 +76,39 @@ header {
 
 /*styling of deal image, indicated to be on the left side*/
 #deal {
-    float:left
+    float: left
 }
 
 /*sizes image inside of deal div*/
 #deal img {
     width: 100%;
-    margin:auto;
+    margin: auto;
 }
 
 /*styling of slides*/
 .offerSlides {
     display: none;
-    width:100%;
-    margin:auto;
+    width: 95%
 }
 
 /*container of slides indicated to float to the right side*/
 #offerslider {
-float:right;
+    float: right;
+    display:flex;
 }
 
 /*styling of left button to move to its position on the slides*/
 .left {
-    transform: translate(0%,-800%);
+   float:left;
+   
 }
 
 /*styling of right button to move to its position on the slides*/
 .right {
-    transform: translate(3920%,-800%)
+    float: right;
+    
 }
+
 
 /*styling of bottom navigation*/
 #bottomnav {
