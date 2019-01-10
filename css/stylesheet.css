@@ -110,6 +110,9 @@ header {
     
 }
 
+#contain {
+    background-color: rgba(38, 38, 38, .95);
+}
 
 /*styling of bottom navigation*/
 #bottomnav {
